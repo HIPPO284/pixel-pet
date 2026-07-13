@@ -1,0 +1,14 @@
+{
+  "name": "pixelpet-v5.5-feedback",
+  "version": "5.5.2",
+  "private": true,
+  "type": "module",
+  "description": "PixelPet Studio feedback edition with Windows launcher and port-conflict fixes",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/server.test.mjs"
+  }
+}

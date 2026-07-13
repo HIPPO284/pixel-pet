@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PixelPet Feedback Admin</title>
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <header><div><strong>PIXEL<span>PET</span></strong><small>Feedback Admin</small></div><a href="/">返回编辑器</a></header>
+  <main>
+    <section class="auth card">
+      <h1>评价管理</h1>
+      <p>输入服务器启动时显示的管理员令牌。令牌仅保存在当前标签页。</p>
+      <div class="row"><input id="token" type="password" autocomplete="off" placeholder="ADMIN_TOKEN"><button id="connect">连接</button></div>
+      <div id="message" class="message"></div>
+    </section>
+
+    <section id="dashboard" class="hidden">
+      <div class="toolbar"><div><input id="search" placeholder="搜索国籍、评价或宠物名称"><select id="rating"><option value="0">全部星级</option><option value="5">5 星</option><option value="4">4 星</option><option value="3">3 星</option><option value="2">2 星</option><option value="1">1 星</option></select></div><div><button id="refresh">刷新</button><button id="export">导出 CSV</button></div></div>
+      <div class="metrics"><article class="card"><small>总评价数</small><b id="total">0</b></article><article class="card"><small>平均星级</small><b id="average">–</b></article><article class="card"><small>主要国籍</small><b id="topNationality">–</b></article></div>
+      <div class="grid"><section class="card"><h2>星级分布</h2><div id="ratingStats"></div></section><section class="card"><h2>国籍分布</h2><div id="nationalityStats"></div></section></div>
+      <section class="card table-card"><div class="table-head"><h2>最新评价</h2><span id="resultCount"></span></div><div class="table-wrap"><table><thead><tr><th>时间</th><th>星级</th><th>国籍</th><th>评价</th><th>语言</th><th>宠物名称</th></tr></thead><tbody id="rows"></tbody></table></div><div class="pager"><button id="prevPage">上一页</button><span id="pageInfo"></span><button id="nextPage">下一页</button></div></section>
+    </section>
+  </main>
+  <script src="/admin.js"></script>
+</body>
+</html>
