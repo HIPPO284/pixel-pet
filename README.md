@@ -2,7 +2,26 @@
 
 LINK-----https://pixel-pet-production.up.railway.app
 
+# PixelPet 🐾
 
+Turn your pet photo into a customizable pixel desktop companion.
+
+
+Before → PixelPet → Desktop Companion
+
+## What PixelPet Does
+
+1. Upload a pet photo
+2. Select and repair the pet
+3. Customize its pixel appearance
+4. Download PNG, sprite sheet and .petpack files
+
+## Why PixelPet
+
+- Pet photos are processed locally
+- Multiple interface languages
+- Exportable sprite sheets
+- No pet photos stored on the server
 
 
 
