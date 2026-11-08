@@ -22,3 +22,5 @@ An early prototype. The previous Railway demo is currently unavailable.
 ## License
 
 See LICENSE for usage restrictions.
+
+An exploratory prototype generated with AI tools. I contributed the product idea and feature requirements; I did not write the implementation code.
